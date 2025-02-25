@@ -1,0 +1,14 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+.header
+{
+    background-color: #d1defb;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 70px 70px 70px auto 70px;
+    
+}
