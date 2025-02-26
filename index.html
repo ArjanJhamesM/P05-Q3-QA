@@ -3,26 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiles Productions</title>
+    <title>keeb.tles</title>
+
     <link rel="stylesheet" href="main.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24;
+          display: inline-flex;
+          vertical-align: top;
+        }
+        </style>
+
+
 </head>
-<body>
+<body onload="loadTypewriterEffects()" id="homepage-body">
     <header class="header">
-        <div>
-            <a href="">Home</a>
+        
+        <div class="header-link" id="homepage-link">
+            <a href="#homepage">HOME</a>
         </div>
-        <div>
-            <a href="">Info</a>
+
+        <div class="header-link" id="products-link">
+            <a href="#products">PRODUCTS</a>
         </div>
-        <div>
-            <a href="">Products</a>
+
+        <div class="header-link" id="info-link">
+            <a href="#info-company">INFO</a>
         </div>
-        <div>
-            
+
+        <div id="logo-header">
+            <div class="logo-container">
+                <a href="index.html"><img class="logo" src="images/keebtles black.png"></a>
+            </div>
         </div>
-        <div>
-            <a href="">Sign up</a>
+        
+        <div class="header-link" id="signup-link">
+            <a href="signup.html">SIGN UP/LOG IN</a>
         </div>
     </header>
+    
+    <section id="homepage">
+        <script>
+            var homepageDescriptionText = "Shop our keycap, switch, and braided cable offerings";
+        </script>
+
+        <script src="code.js"></script>
+
+        <img id="company-image" src="images/pexels-alexander-isreb-880417-1797428.jpg">
+    </section>
+
+    <section id="products">
+        <h2 id="homepage-description"></h2>
+
+        <div class="products-container"">
+            <div class="product-listing" id="gmk-hammerhead">
+                <img class="product-image" src="images/hammerhead.jpg">
+                <h1 class="product-title">GMK HAMMERHEAD KEYCAPS</h1>
+                <p class="product-price">USD 125.00</p>
+                <div class="stars-info">
+                    <span class="material-symbols-outlined" style="font-size: 15px;">star</span>
+                    <p class="stars-count">N&#47A</p>
+                </div>
+            </div>
+
+
+            <div class="product-listing" id="gmk-skydolch">
+                <img class="product-image" src="images/skydolch.jpg">
+                <h1 class="product-title">GMK SKY DOLCH KEYCAPS</h1>
+                <p class="product-price">USD 125.00</p>
+                <div class="stars-info">
+                    <span class="material-symbols-outlined" style="font-size: 15px;">star</span>
+                    <p class="stars-count">N&#47A</p>
+                </div>
+            </div>
+
+
+            <div class="product-listing" id="gmk-nautilus">
+                <img class="product-image" src="images/nautilus.jpg">
+                <h1 class="product-title">GMK NAUTILUS KEYCAPS</h1>
+                <p class="product-price">USD 125.00</p>
+                <div class="stars-info">
+                    <span class="material-symbols-outlined" style="font-size: 15px;">star</span>
+                    <p class="stars-count">N&#47A</p>
+                </div>
+            </div>
+
+
+            <div class="product-listing" id="gmk-soyamilk">
+                <img class="product-image" src="images/soyamilk.jpg">
+                <h1 class="product-title">GMK SOYA MILK KEYCAPS</h1>
+                <p class="product-price">USD 125.00</p>
+                <div class="stars-info">
+                    <span class="material-symbols-outlined" style="font-size: 15px;">star</span>
+                    <p class="stars-count">N&#47A</p>
+                </div>
+            </div>
+
+
+            <div class="product-listing">
+                <img class="product-image" src="images/olivia.png">
+                <h1 class="product-title">GMK OLIVIA KEYCAPS</h1>
+                <p class="product-price">USD 125.00</p>
+                <div class="stars-info">
+                    <span class="material-symbols-outlined" style="font-size: 15px;">star</span>
+                    <p class="stars-count">N&#47A</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="info-company">
+        <div id="logo-info-company-container">
+            <img id="logo-info-company" src="images/keebtles black.png">
+        </div>
+        
+        <p id="text-info-company">
+            keeb.tles is the leading distributor of keyboard parts based on Manila.
+            Established in 2020, we have since then carried products from the likes of GMK, Cherry, Gateron, Akko, and GMMK.
+            <br><br>
+            Contact us at (+632) 8441-1816 / 84410737 
+        </p>
+    </section>
 </body>
 </html>
